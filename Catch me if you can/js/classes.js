@@ -5,22 +5,17 @@ class Timer {
     this.intervalId = null;
   }
 
- 
   start(callback) {
     return (this.intervalId = setInterval(() => {
       this.currentTime += 1;
-      callback();
 
-   
-      if (this.currentTime >= 5) {
-        clearInterval(this.intervalId); 
+      if (this.currentTime >= 180) {
+        clearInterval(this.intervalId);
         changeImageToImg5(); 
       }
+      callback();
     }, 1000));
   }
-
-
-
 
   getMinutes() {
     return parseInt(this.currentTime / 60);
@@ -44,4 +39,3 @@ class Timer {
     return `${min}:${sec}`;
   }
 }
-

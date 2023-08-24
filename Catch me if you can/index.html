@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catch-me-if-you-can!!</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  
-  </head>
 
-  <body>
-    <div class="left_container">
-      <img class="logo" src="./images/icongrande.png" alt="logo" />
-  
-      <div class="box">
-        <h1>Timer</h1>
-        <p>
-          <span id="minDec" class="number">0</span>
-          <span id="minUni" class="number">0</span>
-          <span>:</span>
-          <span id="secDec" class="number">0</span>
-          <span id="secUni" class="number">0</span>
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catch-me-if-you-can!!</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+  <div class="left_container">
+    <img class="logo" src="./images/icongrande.png" alt="logo" />
+
+    <div class="box">
+      <h1>Timer</h1>
+      <p>
+        <span id="minDec" class="number">0</span>
+        <span id="minUni" class="number">0</span>
+        <span>:</span>
+        <span id="secDec" class="number">0</span>
+        <span id="secUni" class="number">0</span>
+      </p>
+    </div>
+    <div class="box">
+      <h1>Score</h1>
+      <p>
+        <span class="countPoints">0</span>
+        <span>pts</span>
+      </p>
+    </div>
+
+
+
+  </div>
+
+  <div id="image_section">
+    <div id="winText"></div>
+
+    <div id="gameOverText">
+
+    </div>
+    <div id="text"></div>
+
+
+    <div id="notMe"></div>
+    <div id="findMe"></div>
+    <div id="winImage"></div>
+  </div>
+
+
+
+  <div class="blur">
+    <button id="playBtn">PLAY</button>
+    <button id="instBtn">Instructions</button>
+    <div id="overlay">
+      <div id="overlay-content">
+        <p>Do you think you are a person who pays attention to details? This is an important quality for a good
+          detective and a good developer.
+          So let's test it!! </p>
+
+        <p>This challenge is simple, all you have to do is find what it asks for. Are you ready?</p>
+        <p><strong> GOOD LUCK!!!</strong> </p>
+        <button id="closebtn">Close</button>
       </div>
-      <div class="box">
-        <h1>Score</h1>
-        <p>
-          <span class="countPoints">0</span>
-          <span>pts</span>
-        </p>
-      </div>
-    
-    
-      
-    </div>
 
-    <div id="image_section">
-      <h1 id="winText"></h1>
-      <h1 id="text"></h1>
-  
-
-      <div id="notMe"></div>
-      <div id="findMe"></div>
-      <div id="winImage"></div>
     </div>
 
 
-
-    <div class="blur">
-      <button id="playBtn">PLAY</button>
-      <button id="instBtn">Instructions</button>
-      <div id="overlay">
-        <div id="overlay-content">
-            <p>Do you think you are a person who pays attention to details? This is an important quality for a good detective and a good developer.
-              So let's test it!! </p>
-              
-           <p>This challenge is simple, all you have to do is find what it asks for. Are you ready?</p>
-            <p><strong> GOOD LUCK!!!</strong> </p>
-            <button id="closebtn">Close</button>
-        </div>
-  
-    </div>
-
-    
 
 
     <script src="./js/classes.js"></script>
     <script src="./js/index.js"></script>
-  </body>
-</html>
+</body>
 
+</html>

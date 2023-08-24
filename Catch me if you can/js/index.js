@@ -11,6 +11,9 @@ playBtnClick.addEventListener("click", () => {
   changeImage();
   blurArea[0].style.display = "none";
   timer.start(printTime);
+  playSound = new Audio("./sounds/allgame.mp3");
+  playSound.volume = 0.3;
+  playSound.play();
 });
 
 instBtnClick.addEventListener("click", function () {
@@ -20,6 +23,7 @@ instBtnClick.addEventListener("click", function () {
 closebtn.addEventListener("click", function () {
   overlay.style.display = "none";
 });
+
 
 //Find Me
 let findMe = document.getElementById("findMe");
@@ -35,6 +39,9 @@ currentImage.style.backgroundImage = 'url("./images/2_rato.jpeg")';
 findMe.addEventListener("click", () => {
   findMe.style.borderColor = "white";
   updateScore();
+  playSoundFind = new Audio("./sounds/yupiiii.mp3");
+  playSoundFind.volume = 0.9;
+  playSoundFind.play();
   MeFound = true;
   setTimeout(function () {
     if (currentScore >= 1) {
@@ -52,6 +59,9 @@ function updateScore() {
 
 notMe.addEventListener("click", () => {
   console.log("not me clicked");
+  playSoundNotMe = new Audio("./sounds/notme.mp3");
+  playSoundNotMe.volume = 0.9;
+  playSoundNotMe.play();
   MeFound = false;
   setTimeout(function () {
     alert("Sorry, not yet!");
@@ -64,7 +74,6 @@ let img2 = 'url("./images/3_egg.jpg")';
 let img3 = 'url("./images/1_fantasma.jpg")';
 let img4 = 'url("./images/4_coracao.jpg")';
 let img5 = 'url("./images/finalgame.jpg")';
-
 //texts
 let winText = document.getElementById("winText");
 let text = document.getElementById("text");
@@ -83,7 +92,7 @@ function changeImage() {
     findMe.style.right = "170px";
     findMe.style.top = "375px";
     findMe.style.bottom = "32%";
-    text.innerHTML = "Where is the egg?";
+    text.innerHTML = "Where is the red egg?";
   } else if (currentScore === 2) {
     currentImage.style.backgroundImage = img3;
     findMe.style.borderColor = "transparent";
@@ -97,10 +106,11 @@ function changeImage() {
     findMe.style.right = "340px";
     findMe.style.top = "8px";
     findMe.style.bottom = "22%";
-    text.innerHTML = "Where is the heart?";
-  }  else if (currentScore === 4) {
+    text.innerHTML = "Where is the tiny heart?";
+  } else if (currentScore === 4) {
     currentImage.style.backgroundImage = img5;
     text.style.display = "none";
+
     winText.innerHTML = " You Win Congrats Sherlock Holmes!!!";
   }
 }
@@ -111,14 +121,12 @@ const minUniElement = document.getElementById("minUni");
 const secDecElement = document.getElementById("secDec");
 const secUniElement = document.getElementById("secUni");
 
-
 function printTime() {
   const sec = printSeconds();
   const min = printMinutes();
-
-  if (sec >= 5) {
-    changeImageToImg5();
-  }
+}
+if (min >= 3) {
+  changeImageToImg5();
 }
 
 function changeImageToImg5() {
@@ -131,10 +139,11 @@ function printMinutes() {
   const printMin = timer.computeTwoDigitNumber(timer.getMinutes());
   minUniElement.innerText = printMin[1];
   minDecElement.innerText = printMin[0];
+  console.log(printMin);
 }
-
 function printSeconds() {
   const printSec = timer.computeTwoDigitNumber(timer.getSeconds());
   secUniElement.innerText = printSec[1];
   secDecElement.innerText = printSec[0];
+  console.log(printSec);
 }

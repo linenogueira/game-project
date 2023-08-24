@@ -145,14 +145,12 @@ p {
   text-align: center;
 }
 
-#overlay-content p {
-}
-
 #winText {
-  font-size: 50pt;
+  font-size: 55pt;
   background-color: none;
   margin-left: 150px;
   margin-top: -100px;
+  color: #bc6c25;
   opacity: 80%;
   width: -1px;
   height: 60px;
@@ -167,7 +165,7 @@ p {
   margin-left: -40px;
   margin-top: -8px;
   top: 35%;
-  width: 250px;
+  width: 280px;
   height: 40px;
   text-align: center;
   border-radius: 5pt;
@@ -177,7 +175,20 @@ p {
   z-index: 1;
 }
 
-/* PC styles */
+#gameOverText {
+  font-size: 50pt;
+  background-color: none;
+  margin-left: 150px;
+  margin-top: -100px;
+  opacity: 80%;
+  width: -1px;
+  height: 60px;
+  position: absolute;
+  top: 30%;
+  z-index: 2;
+}
+
+/* computador styles */
 @media (min-width: 992px) {
   #image_section {
     width: 900px;

@@ -8,7 +8,7 @@ After every finding you are given a score point.
 Take note, though: Your “click” must be very precise. 
 If you don’t land exactly on spot, it doesn’t recognize it as a right answer.
 
-Your time is 3 minutes 3 minutes. You can do it !!
+Your time is 3 minutes. You can do it !!
 ---
 
 

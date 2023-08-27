@@ -14,4 +14,4 @@ Your time is 3 minutes. You can do it !!
 
 I hope you have fun and enjoy the ride! ;)
 
-More info about the game <https://docs.google.com/presentation/d/1RLSfrd0AVTCVzngV4gIE0BD7XCKueq5aKauajEsNjDA/edit#slide=id.g27749633bfe_0_0>  
+<https://docs.google.com/presentation/d/1RLSfrd0AVTCVzngV4gIE0BD7XCKueq5aKauajEsNjDA/edit#slide=id.g27749633bfe_0_0>  

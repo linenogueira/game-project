@@ -112,9 +112,12 @@ function changeImage() {
     text.style.display = "none";
 
     winText.innerHTML = " You Win Congrats Sherlock Holmes!!!";
-  }
+    stopTimer();}
 }
 
+function stopTimer() {
+  clearInterval(timer.intervalId);
+}
 // Timer
 const minDecElement = document.getElementById("minDec");
 const minUniElement = document.getElementById("minUni");
